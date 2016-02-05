@@ -1,0 +1,44 @@
+<!--display for error message-->
+<%= form_for(@person) do |f| %>
+  <% if @person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+      <ul>
+      <% @person.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<!--The inputs of the form-->
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :weight, "Weight (in kilograms)" %><br>
+    <%= f.number_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :height, "Height (in centimeters)" %><br>
+    <%= f.number_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :color, "Eye Color" %><br>
+    <%= f.text_field :color %>
+  </div>
+  <div class="field">
+    <%= f.label :font %><br>
+    <%= f.select :font, ['Times New Roman', 'Tahoma', 'Arial', 'Verdana', 'Comic Sans MS'] %>
+  </div>
+  <div class="field">
+    <%= f.label :happy, "Happiness Scale" %><br>
+    <%= f.select :happy,  (1..10)%>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

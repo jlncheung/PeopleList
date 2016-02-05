@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+	margin-left: 3%;
+	margin-top: 1%;
+	background-image:url("EgBg.png");
+	font-family:"verdana";
+}
+
+h1{
+    text-align:center;
+    font-family:'Corben', Georgia, Times, serif;
+}
+
+/*body:after{*/
+/*    content : "";*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+/*    background-image: url("http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/121/full/fabric-patterns-7.jpg");*/
+/*    background-repeat:repeat;*/
+/*    overflow:scroll;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*    opacity : 0.6;*/
+/*    z-index: -1;*/
+/*}*/
+
+table{
+	width:90%;
+	margin-top: 6mm;
+	margin-bottom: 6mm;
+}
+
+table,th,td{
+	border-collapse: collapse;
+	border: 1px solid;
+	font-size: 15px;
+}
+
+th{
+	text-align: left;
+	background-color: gray;
+	padding:3px;
+	color: #d4ff80;
+}
+
+td{
+	padding:7px 5px 3px 5px;
+	/*width: 25%*/
+	height:40px;
+}
+
+/*for the error box*/
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+.submit{
+	/*border-radius: 10px;*/
+    background: #24444F;
+    color: #4d88ff;
+    /*width: 90px;*/
+    height: 40px;
+    text-align:center;
+    font-size:15px;
+}
+
+.submit:hover {
+	background-color: black;
+}
+
+/*for the number of jumps to the number of happiness points*/
+@keyframes happy {
+    0%   {left:0px; bottom:0px;}
+    25%  {left:15px; bottom:20px;}
+    50%  {right:0px; bottom:0px;}
+    75%  {right:15px; bottom:20px;}
+    100% {left:0px; bottom:0px;}
+}

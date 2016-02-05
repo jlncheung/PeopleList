@@ -1,0 +1,33 @@
+<p>Welcome to the club you are the person #<%= @person.id %></p>
+<p>
+  <strong>Name:</strong>
+  <%= @person.name %>
+</p>
+
+<p>
+  <strong>Weight (in kilograms):</strong>
+  <%= @person.weight %>
+</p>
+
+<p>
+  <strong>Height (in centimeters):</strong>
+  <%= @person.height %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @person.color %>
+</p>
+
+<p>
+  <strong>Font:</strong>
+  <%= @person.font %>
+</p>
+
+<p>
+  <strong>Happiness Scale:</strong>
+  <%= @person.happy %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Continue', people_path %>

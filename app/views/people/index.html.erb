@@ -1,0 +1,38 @@
+<h1>Listing People</h1>
+
+<table>
+  <!--table heading-->
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Weight (in kilograms)</th>
+      <th>Height (in centimeters)</th>
+      <th>Eye Color</th>
+      <th>Font</th>
+      <th>Happiness Scale</th>
+      <th>Show</th>
+      <th>Edit</th>
+      <th>Destroy</th>
+    </tr>
+
+    <% @people.each do |person| %>
+    <!--reading the data to fill in the table-->
+      <tr>
+        <td><%= person.id %></td>
+        <td><%= person.name %></td>
+        <td><%= person.weight %></td>
+        <td><%= person.height %></td>
+        <td><%= person.color %></td>
+        <td><%= person.font %></td>
+        <td><%= person.happy %></td>
+        <td><%= link_to 'Show', person %></td>
+        <td><%= link_to 'Edit', edit_person_path(person) %></td>
+        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+</table>
+
+<br>
+
+<%= button_to 'New Person', new_person_path, :class => "submit", :method => :get %>
+<div style="margin-top:5mm;"><%= button_to 'Display', '/display', :class => "submit", :method => :get %></div>
