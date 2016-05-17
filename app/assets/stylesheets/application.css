@@ -25,23 +25,6 @@ h1{
     font-family:'Corben', Georgia, Times, serif;
 }
 
-/*body:after{*/
-/*    content : "";*/
-/*    display: block;*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    bottom: 0;*/
-/*    right: 0;*/
-/*    background-image: url("http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/121/full/fabric-patterns-7.jpg");*/
-/*    background-repeat:repeat;*/
-/*    overflow:scroll;*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-/*    opacity : 0.6;*/
-/*    z-index: -1;*/
-/*}*/
-
 table{
 	width:90%;
 	margin-top: 6mm;
@@ -63,7 +46,7 @@ th{
 
 td{
 	padding:7px 5px 3px 5px;
-	/*width: 25%*/
+	/*width: 5%*/
 	height:40px;
 }
 
